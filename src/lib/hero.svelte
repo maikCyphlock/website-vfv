@@ -1,6 +1,4 @@
-<script>
-	import Potrait from '/potrait.jpg';
-</script>
+
 
 <div class="pt-5 my-5 text-center border-bottom">
 	<h1 class="display-4 fw-bold">Comisión de árbitros del estado portuguesa</h1>
@@ -18,7 +16,7 @@
 
 	<div class="container ">
 		<img
-			src={Potrait}
+			src="/potrait.jpg"
 			lazy
 			class="img-fluid border rounded-3 shadow-lg mb-2"
 			alt="árbitros venezuela"
