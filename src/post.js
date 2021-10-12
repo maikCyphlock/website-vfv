@@ -2,7 +2,7 @@ import _ from "lodash";
 import all from "./content/*.md";
 import moment from 'moment'
 import 'moment/locale/es-mx.js';
-import { v4 as uuidv4 } from 'uuid';
+
 
 moment.locale('es-mx');
 
@@ -14,10 +14,7 @@ export const posts = _.chain(all)
 // función para formatear cada post
 function transform({ filename, html, metadata }) {
   // el permalink es el nombre del archivo '.md'
-  const uid = uuidv4()
-
-  const Prevpermalink = filename.replace(/\.md$/, "");
-  const permalink =`${Prevpermalink}-${uid}`
+  const permalink = filename.replace(/\.md$/, "");
 
   // convertimos la fecha en un Date
   let Prevdate = new Date(metadata.date);
