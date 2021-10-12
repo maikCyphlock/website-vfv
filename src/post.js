@@ -1,10 +1,10 @@
 import _ from "lodash";
 import all from "./content/*.md";
 import moment from 'moment'
-import 'moment/locale/es-mx';
+import 'moment/locale/es-mx.js';
 import { v4 as uuidv4 } from 'uuid';
 
-moment.locale('es');
+moment.locale('es-mx');
 
 export const posts = _.chain(all)
   .map(transform)
