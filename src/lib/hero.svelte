@@ -10,8 +10,8 @@
 
   <div class="m-lg-4 p-lg-5">
     <img
-      src="/potrait.jpg"
-      lazy
+      src="/potrait.webp"
+      
       class="img-fluid border rounded-3 shadow-lg mb-2"
       alt="árbitros venezuela"
       loading="lazy"

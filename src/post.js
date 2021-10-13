@@ -1,34 +1,25 @@
-import _ from "lodash";
+
 import all from "./content/*.md";
 import moment from 'moment'
-import 'moment/locale/es-mx.js';
 
 
-moment.locale('es-mx');
+const posts= all.map(({ filename, html, metadata }) => {
 
-export const posts = _.chain(all)
-  .map(transform)
-  .orderBy("date", "desc") // ordenamos los posts por fecha
-  .value();
+const permalink = filename.replace(/\.md$/, "");
+let Prevdate = new Date(metadata.date);
+const date = moment(Prevdate).format("MMM Do YY");  ;
 
-// función para formatear cada post
-function transform({ filename, html, metadata }) {
-  // el permalink es el nombre del archivo '.md'
-  const permalink = filename.replace(/\.md$/, "");
 
-  // convertimos la fecha en un Date
-  let Prevdate = new Date(metadata.date);
+return { ...metadata, filename, html, permalink, date };
+})
 
-  const date = moment(Prevdate).format("MMM Do YY");  ;
+console.log(posts.reduce(date => date > date))
 
-  // devolvemos el post con el nuevo formato
-  return { ...metadata, filename, html, permalink, date };
-}
 
 // función para buscar un post
-export function findPost(permalink) {
+export function findPost(slug) {
   // usamos lodash para encontrar un post por su permalink (nombre de fichero):
-  return _.find(posts, { permalink });
+  return posts.find(post=> post.permalink === slug)
 }
 
 export default posts;

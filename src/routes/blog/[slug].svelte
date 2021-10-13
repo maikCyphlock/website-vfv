@@ -7,21 +7,21 @@
         const slug = page.page.params.slug;
         
         const post = findPost(slug);
-        
+        console.log(post)
         return {props: {post}} ;
     }
-
 
 </script>
 
 <script>
-    export let post;
     
+  export let post;
+ 
 </script>
 
 <svelte:head>
     <title>{post.title}</title>
-    <link rel="stylesheet" href="https://stackedit.io/style.css" />
+    <link rel="stylesheet" href="/markdown.css" />
 </svelte:head>
 
 
@@ -29,10 +29,10 @@
 <Container class="mt-4 stackedit">
 <h3 class="text-center">{post.title}</h3>
 
-<div class="content border-bottom">{@html post.html}</div>
+<div class="content border-bottom stackedit__html">{@html post.html}</div>
 
 
-<div class="d-flex mt-5 justify-content-center stackedit__html">
+<div class="d-flex mt-5 justify-content-center ">
     <a href="/"  role="link" class="btn btn-success"> Regresar</a> 
 </div>
 </Container>
@@ -40,4 +40,5 @@
 
 <style>
  
+
 </style>

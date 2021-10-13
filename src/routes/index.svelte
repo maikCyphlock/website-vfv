@@ -10,6 +10,7 @@
   <title>VFV</title>
 </svelte:head>
 
+
 <Navbar />
 <Container>
   <Hero />

@@ -13,7 +13,7 @@
     </button>
     <a class="navbar-brand me-4" href="/"
       ><img
-        src="https://upload.wikimedia.org/wikipedia/commons/8/84/FIFA_Logo_%28R%29_%282010%29.svg"
+        src=""
         height="40"
         alt=""
       /></a
