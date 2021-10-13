@@ -11,13 +11,7 @@
     >
       <span class="navbar-toggler-icon" />
     </button>
-    <a class="navbar-brand me-4" href="/"
-      ><img
-        src=""
-        height="40"
-        alt=""
-      /></a
-    >
+    <a class="navbar-brand me-4" href="/"><img src="" height="40" alt="" /></a>
     <div class="collapse navbar-collapse" id="navbarToggler">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">

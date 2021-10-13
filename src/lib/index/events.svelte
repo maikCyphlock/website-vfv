@@ -21,7 +21,7 @@
         <CarouselItem bind:activeIndex itemIndex={index}>
           <img
             src={item}
-            loading=lazy
+            loading="lazy"
             class="d-block w-100"
             alt={`${item} ${index + 1}`}
           />

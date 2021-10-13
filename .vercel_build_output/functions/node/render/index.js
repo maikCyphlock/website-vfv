@@ -9926,7 +9926,7 @@ var user_hooks = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module"
 });
-var template = ({ head, body }) => '<!DOCTYPE html>\n<html lang="en">\n  <head>\n    <meta charset="utf-8" />\n    <link rel="icon" href="/favicon.png" />\n    <meta name="viewport" content="width=device-width, initial-scale=1" />\n    <link rel="stylesheet" href="/bootstrap.min.css">\n\n    ' + head + '\n  </head>\n  <body>\n    <div id="svelte">' + body + '</div>\n\n    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"><\/script>\n    \n  </body>\n</html>\n';
+var template = ({ head, body }) => '<!DOCTYPE html>\n<html lang="en">\n  <head>\n    <meta charset="utf-8" />\n    <link rel="icon" href="/favicon.png" />\n    <meta name="viewport" content="width=device-width, initial-scale=1" />\n    <link\n      rel="stylesheet"\n      rel="preload"\n      as="style"\n      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"\n    />\n\n    ' + head + '\n  </head>\n  <body>\n    <div id="svelte">' + body + '</div>\n\n    <script\n      defer\n      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"\n      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"\n      crossorigin="anonymous"\n    ><\/script>\n  </body>\n</html>\n';
 var options = null;
 var default_settings = { paths: { "base": "", "assets": "" } };
 function init(settings = default_settings) {
@@ -9937,9 +9937,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: assets + "/_app/start-f06f0f78.js",
+      file: assets + "/_app/start-1390447f.js",
       css: [assets + "/_app/assets/start-61d1577b.css", assets + "/_app/assets/vendor-cf063f61.css"],
-      js: [assets + "/_app/start-f06f0f78.js", assets + "/_app/chunks/vendor-159a1ba9.js"]
+      js: [assets + "/_app/start-1390447f.js", assets + "/_app/chunks/vendor-159a1ba9.js"]
     },
     fetched: void 0,
     floc: false,
@@ -9969,7 +9969,7 @@ function init(settings = default_settings) {
 var d = (s2) => s2.replace(/%23/g, "#").replace(/%3[Bb]/g, ";").replace(/%2[Cc]/g, ",").replace(/%2[Ff]/g, "/").replace(/%3[Ff]/g, "?").replace(/%3[Aa]/g, ":").replace(/%40/g, "@").replace(/%26/g, "&").replace(/%3[Dd]/g, "=").replace(/%2[Bb]/g, "+").replace(/%24/g, "$");
 var empty = () => ({});
 var manifest = {
-  assets: [{ "file": "IMG-20211005-WA0031.jpg", "size": 73434, "type": "image/jpeg" }, { "file": "IMG-20211005-WA0032.jpg", "size": 102890, "type": "image/jpeg" }, { "file": "IMG-20211005-WA0033.jpg", "size": 57448, "type": "image/jpeg" }, { "file": "IMG-20211005-WA0034.jpg", "size": 35803, "type": "image/jpeg" }, { "file": "IMG-20211005-WA0035.jpg", "size": 61526, "type": "image/jpeg" }, { "file": "IMG-20211006-WA0002.jpg", "size": 147734, "type": "image/jpeg" }, { "file": "IMG-20211006-WA0003.jpg", "size": 149785, "type": "image/jpeg" }, { "file": "IMG-20211006-WA0004.jpg", "size": 110801, "type": "image/jpeg" }, { "file": "IMG-20211006-WA0008.jpg", "size": 64112, "type": "image/jpeg" }, { "file": "IMG_20210905_082025.jpg", "size": 70966, "type": "image/jpeg" }, { "file": "IMG_20210908_104844.jpg", "size": 77563, "type": "image/jpeg" }, { "file": "IMG_20211006_080600.jpg", "size": 76317, "type": "image/jpeg" }, { "file": "bootstrap.min.css", "size": 162764, "type": "text/css" }, { "file": "favicon.png", "size": 1571, "type": "image/png" }, { "file": "img001.jpg", "size": 149261, "type": "image/jpeg" }, { "file": "img002.jpg", "size": 143296, "type": "image/jpeg" }, { "file": "img003.jpg", "size": 163479, "type": "image/jpeg" }, { "file": "img004.jpg", "size": 104253, "type": "image/jpeg" }, { "file": "img005.jpg", "size": 104793, "type": "image/jpeg" }, { "file": "markdown.css", "size": 32310, "type": "text/css" }, { "file": "potrait.webp", "size": 248078, "type": "image/webp" }],
+  assets: [{ "file": "IMG-20211005-WA0031.jpg", "size": 73434, "type": "image/jpeg" }, { "file": "IMG-20211005-WA0032.jpg", "size": 102890, "type": "image/jpeg" }, { "file": "IMG-20211005-WA0033.jpg", "size": 57448, "type": "image/jpeg" }, { "file": "favicon.png", "size": 1571, "type": "image/png" }, { "file": "img001.jpg", "size": 63028, "type": "image/jpeg" }, { "file": "img002.jpg", "size": 143296, "type": "image/jpeg" }, { "file": "img003.jpg", "size": 163479, "type": "image/jpeg" }, { "file": "img004.jpg", "size": 104253, "type": "image/jpeg" }, { "file": "img005.jpg", "size": 104793, "type": "image/jpeg" }, { "file": "markdown.css", "size": 30635, "type": "text/css" }, { "file": "potrait.webp", "size": 179852, "type": "image/webp" }],
   layout: ".svelte-kit/build/components/layout.svelte",
   error: ".svelte-kit/build/components/error.svelte",
   routes: [
@@ -10029,7 +10029,7 @@ var module_lookup = {
     return _slug_;
   })
 };
-var metadata_lookup = { ".svelte-kit/build/components/layout.svelte": { "entry": "layout.svelte-cfbb0f22.js", "css": ["assets/vendor-cf063f61.css"], "js": ["layout.svelte-cfbb0f22.js", "chunks/vendor-159a1ba9.js"], "styles": [] }, ".svelte-kit/build/components/error.svelte": { "entry": "error.svelte-01c116ff.js", "css": ["assets/vendor-cf063f61.css"], "js": ["error.svelte-01c116ff.js", "chunks/vendor-159a1ba9.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-d2638ada.js", "css": ["assets/pages/index.svelte-76373f6c.css", "assets/vendor-cf063f61.css"], "js": ["pages/index.svelte-d2638ada.js", "chunks/vendor-159a1ba9.js", "chunks/navbar-17775f30.js", "chunks/post-a84fa415.js"], "styles": [] }, "src/routes/training.svelte": { "entry": "pages/training.svelte-2d5d23c6.js", "css": ["assets/vendor-cf063f61.css"], "js": ["pages/training.svelte-2d5d23c6.js", "chunks/vendor-159a1ba9.js", "chunks/navbar-17775f30.js"], "styles": [] }, "src/routes/crono.svelte": { "entry": "pages/crono.svelte-997750b9.js", "css": ["assets/pages/crono.svelte-296cfacf.css", "assets/vendor-cf063f61.css"], "js": ["pages/crono.svelte-997750b9.js", "chunks/vendor-159a1ba9.js", "chunks/navbar-17775f30.js"], "styles": [] }, "src/routes/blog/[slug].svelte": { "entry": "pages/blog/[slug].svelte-43d1e89e.js", "css": ["assets/vendor-cf063f61.css"], "js": ["pages/blog/[slug].svelte-43d1e89e.js", "chunks/vendor-159a1ba9.js", "chunks/navbar-17775f30.js", "chunks/post-a84fa415.js"], "styles": [] } };
+var metadata_lookup = { ".svelte-kit/build/components/layout.svelte": { "entry": "layout.svelte-cfbb0f22.js", "css": ["assets/vendor-cf063f61.css"], "js": ["layout.svelte-cfbb0f22.js", "chunks/vendor-159a1ba9.js"], "styles": [] }, ".svelte-kit/build/components/error.svelte": { "entry": "error.svelte-01c116ff.js", "css": ["assets/vendor-cf063f61.css"], "js": ["error.svelte-01c116ff.js", "chunks/vendor-159a1ba9.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-9ebfe12e.js", "css": ["assets/pages/index.svelte-247c4266.css", "assets/vendor-cf063f61.css"], "js": ["pages/index.svelte-9ebfe12e.js", "chunks/vendor-159a1ba9.js", "chunks/navbar-17775f30.js", "chunks/post-398fb303.js"], "styles": [] }, "src/routes/training.svelte": { "entry": "pages/training.svelte-2d5d23c6.js", "css": ["assets/vendor-cf063f61.css"], "js": ["pages/training.svelte-2d5d23c6.js", "chunks/vendor-159a1ba9.js", "chunks/navbar-17775f30.js"], "styles": [] }, "src/routes/crono.svelte": { "entry": "pages/crono.svelte-997750b9.js", "css": ["assets/pages/crono.svelte-296cfacf.css", "assets/vendor-cf063f61.css"], "js": ["pages/crono.svelte-997750b9.js", "chunks/vendor-159a1ba9.js", "chunks/navbar-17775f30.js"], "styles": [] }, "src/routes/blog/[slug].svelte": { "entry": "pages/blog/[slug].svelte-ff55082d.js", "css": ["assets/vendor-cf063f61.css"], "js": ["pages/blog/[slug].svelte-ff55082d.js", "chunks/vendor-159a1ba9.js", "chunks/navbar-17775f30.js", "chunks/post-398fb303.js"], "styles": [] } };
 async function load_component(file) {
   const { entry, css: css2, js, styles } = metadata_lookup[file];
   return {
@@ -10587,40 +10587,39 @@ var posts = all.map(({ filename, html, metadata }) => {
   const date = (0, import_moment.default)(Prevdate).format("MMM Do YY");
   return { ...metadata, filename, html, permalink, date };
 });
-console.log(posts.reduce((date) => date > date));
 function findPost(slug) {
   return posts.find((post) => post.permalink === slug);
 }
 var css$1 = {
-  code: ".link-reset.svelte-ttc0cw{text-decoration:none;color:currentColor}.contented.svelte-ttc0cw{display:flex;justify-content:center;flex-direction:column;align-items:center}",
-  map: '{"version":3,"file":"news.svelte","sources":["news.svelte"],"sourcesContent":["<script>\\n  import { Card, CardText,Row,Col,Button } from \\"sveltestrap\\";\\n  import posts from \\"../../post.js\\";\\n \\n<\/script>\\n\\n<h1>Noticias destacadas</h1>\\n<Row >\\n\\t{#each posts as { title, summary, date, author, permalink }}\\n  <Col  sm=\\"12\\" lg=\\"4\\">\\n    <a href={`blog/${permalink}`} class=\\"link-reset\\">\\n      <Card body class=\\"my-4 shadow-sm \\">\\n        <h2 class=\\"text-center\\">{title}</h2>\\n        <h6>autor: {author}</h6>\\n        <div class=\\"contented py-4 border-top\\">\\n          {@html summary}\\n        </div>\\n        {#if date}\\n          <div class=\\"d-flex justify-content-between\\">{date}\\n          <Button color=\\"primary\\" >leer</Button></div>\\n        {/if}\\n      </Card>\\n    </a>\\n  </Col>\\n{/each}\\n</Row>\\n\\n<style>\\n\\t.link-reset{\\n\\t\\ttext-decoration: none;\\n\\t\\tcolor: currentColor;\\n\\t}\\n\\n  .contented {\\n    display: flex;\\n    justify-content: center;\\n    flex-direction: column;\\n    align-items: center;\\n  }\\n</style>\\n"],"names":[],"mappings":"AA4BC,yBAAW,CAAC,AACX,eAAe,CAAE,IAAI,CACrB,KAAK,CAAE,YAAY,AACpB,CAAC,AAEA,UAAU,cAAC,CAAC,AACV,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,CACvB,cAAc,CAAE,MAAM,CACtB,WAAW,CAAE,MAAM,AACrB,CAAC"}'
+  code: ".link-reset.svelte-bz1tbo{text-decoration:none;color:currentColor}.contented.svelte-bz1tbo{display:flex;justify-content:center;flex-direction:column;align-items:center}",
+  map: '{"version":3,"file":"news.svelte","sources":["news.svelte"],"sourcesContent":["<script>\\n  import { Card, CardText, Row, Col, Button } from \\"sveltestrap\\";\\n  import posts from \\"../../post.js\\";\\n<\/script>\\n\\n<h1>Noticias destacadas</h1>\\n<Row>\\n  {#each posts as { title, summary, date, author, permalink }}\\n    <Col sm=\\"12\\" lg=\\"4\\">\\n      <a href={`blog/${permalink}`} class=\\"link-reset\\">\\n        <Card body class=\\"my-4 shadow-sm \\">\\n          <h2 class=\\"text-center\\">{title}</h2>\\n          <h6>autor: {author}</h6>\\n          <div class=\\"contented py-4 border-top\\">\\n            {@html summary}\\n          </div>\\n          {#if date}\\n            <div class=\\"d-flex justify-content-between\\">\\n              {date}\\n              <Button color=\\"primary\\">leer</Button>\\n            </div>\\n          {/if}\\n        </Card>\\n      </a>\\n    </Col>\\n  {/each}\\n</Row>\\n\\n<style>\\n  .link-reset {\\n    text-decoration: none;\\n    color: currentColor;\\n  }\\n\\n  .contented {\\n    display: flex;\\n    justify-content: center;\\n    flex-direction: column;\\n    align-items: center;\\n  }\\n</style>\\n"],"names":[],"mappings":"AA6BE,WAAW,cAAC,CAAC,AACX,eAAe,CAAE,IAAI,CACrB,KAAK,CAAE,YAAY,AACrB,CAAC,AAED,UAAU,cAAC,CAAC,AACV,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,CACvB,cAAc,CAAE,MAAM,CACtB,WAAW,CAAE,MAAM,AACrB,CAAC"}'
 };
 var News = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
   return `<h1>Noticias destacadas</h1>
 ${validate_component(Row, "Row").$$render($$result, {}, {}, {
     default: () => `${each(posts, ({ title, summary, date, author, permalink }) => `${validate_component(Col, "Col").$$render($$result, { sm: "12", lg: "4" }, {}, {
-      default: () => `<a${add_attribute("href", `blog/${permalink}`, 0)} class="${"link-reset svelte-ttc0cw"}">${validate_component(Card, "Card").$$render($$result, { body: true, class: "my-4 shadow-sm " }, {}, {
+      default: () => `<a${add_attribute("href", `blog/${permalink}`, 0)} class="${"link-reset svelte-bz1tbo"}">${validate_component(Card, "Card").$$render($$result, { body: true, class: "my-4 shadow-sm " }, {}, {
         default: () => `<h2 class="${"text-center"}">${escape(title)}</h2>
-        <h6>autor: ${escape(author)}</h6>
-        <div class="${"contented py-4 border-top svelte-ttc0cw"}"><!-- HTML_TAG_START -->${summary}<!-- HTML_TAG_END --></div>
-        ${date ? `<div class="${"d-flex justify-content-between"}">${escape(date)}
-          ${validate_component(Button, "Button").$$render($$result, { color: "primary" }, {}, { default: () => `leer` })}</div>` : ``}
-      `
+          <h6>autor: ${escape(author)}</h6>
+          <div class="${"contented py-4 border-top svelte-bz1tbo"}"><!-- HTML_TAG_START -->${summary}<!-- HTML_TAG_END --></div>
+          ${date ? `<div class="${"d-flex justify-content-between"}">${escape(date)}
+              ${validate_component(Button, "Button").$$render($$result, { color: "primary" }, {}, { default: () => `leer` })}
+            </div>` : ``}
+        `
       })}</a>
-  `
+    `
     })}`)}`
   })}`;
 });
 var Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `${$$result.head += `${$$result.title = `<title>VFV</title>`, ""}`, ""}
 
-
 ${validate_component(Navbar, "Navbar").$$render($$result, {}, {}, {})}
 ${validate_component(Container, "Container").$$render($$result, {}, {}, {
     default: () => `${validate_component(Hero, "Hero").$$render($$result, {}, {}, {})}
-  ${validate_component(Events, "Events").$$render($$result, {}, {}, {})}
-  ${validate_component(News, "News").$$render($$result, {}, {}, {})}`
+  ${validate_component(News, "News").$$render($$result, {}, {}, {})}
+  ${validate_component(Events, "Events").$$render($$result, {}, {}, {})}`
   })}`;
 });
 var index = /* @__PURE__ */ Object.freeze({
@@ -10694,17 +10693,15 @@ var U5Bslugu5D = create_ssr_component(($$result, $$props, $$bindings, slots) => 
   let { post } = $$props;
   if ($$props.post === void 0 && $$bindings.post && post !== void 0)
     $$bindings.post(post);
-  return `${$$result.head += `${$$result.title = `<title>${escape(post.title)}</title>`, ""}<link rel="${"stylesheet"}" href="${"/markdown.css"}" data-svelte="svelte-1q9wfhx">`, ""}
-
+  return `${$$result.head += `${$$result.title = `<title>${escape(post.title)}</title>`, ""}<link rel="${"stylesheet"}" href="${"/markdown.css"}" data-svelte="svelte-1h00kqd">`, ""}
 
 ${validate_component(Navbar, "Navbar").$$render($$result, {}, {}, {})}
 ${validate_component(Container, "Container").$$render($$result, { class: "mt-4 stackedit" }, {}, {
     default: () => `<h3 class="${"text-center"}">${escape(post.title)}</h3>
 
-<div class="${"content border-bottom stackedit__html"}"><!-- HTML_TAG_START -->${post.html}<!-- HTML_TAG_END --></div>
+  <div class="${"content border-bottom stackedit__html"}"><!-- HTML_TAG_START -->${post.html}<!-- HTML_TAG_END --></div>
 
-
-<div class="${"d-flex mt-5 justify-content-center "}"><a href="${"/"}" role="${"link"}" class="${"btn btn-success"}">Regresar</a></div>`
+  <div class="${"d-flex mt-5 justify-content-center "}"><a href="${"/"}" role="${"link"}" class="${"btn btn-success"}">Regresar</a></div>`
   })}`;
 });
 var _slug_ = /* @__PURE__ */ Object.freeze({
