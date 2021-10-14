@@ -14,12 +14,14 @@
           <div class="contented py-4 border-top">
             {@html summary}
           </div>
-          {#if date}
+          
             <div class="d-flex justify-content-between">
+                {#if date}
               {date}
+                {/if}
               <Button color="primary">leer</Button>
             </div>
-          {/if}
+        
         </Card>
       </a>
     </Col>

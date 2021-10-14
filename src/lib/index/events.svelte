@@ -7,7 +7,8 @@
     CarouselControl,
     CarouselIndicators,
   } from "sveltestrap";
-  const items = ["/img005", "/img002", "/img003", "/img004","img007"];
+  const items = ["https://i.ibb.co/6sxNTbW/img005.jpg", "https://i.ibb.co/HNz3CVg/img002.jpg", "https://i.ibb.co/6ttWDJj/img003.jpg", "https://i.ibb.co/9ZZP9Tf/img004.jpg"," https://i.ibb.co/syGKBnc/img007.jpg","https://i.ibb.co/4ptjKNV/img001.jpg"];
+
   let activeIndex = 0;
 </script>
 
