@@ -7,8 +7,8 @@
 <Row>
   {#each posts as { title, summary, date, author, permalink }}
     <Col sm="12" lg="4">
-      <a href={`blog/${permalink}`} class="link-reset">
-        <Card body class="my-4 shadow-sm ">
+      <a sveltekit:prefetch href={`blog/${permalink}`} class="link-reset">
+        <Card body class="my-4 shadow-sm  p-4">
           <h2 class="text-center">{title}</h2>
           <h6>autor: {author}</h6>
           <div class="contented py-4 border-top">
@@ -31,6 +31,7 @@
     text-decoration: none;
     color: currentColor;
   }
+
 
   .contented {
     display: flex;

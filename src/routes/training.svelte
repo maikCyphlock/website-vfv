@@ -5,7 +5,7 @@
 
 <Navbar />
 <Container class="mt-4">
-  <h1>Vídeos</h1>
+  <h3>Vídeos para estudiar</h3>
   <Row cols={{ lg: 3, md: 2 }}>
     <Col sm="12" class="mt-3">
       <div class="ratio ratio-16x9">

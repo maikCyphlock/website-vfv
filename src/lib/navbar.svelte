@@ -1,3 +1,5 @@
+
+
 <nav class="navbar navbar-expand-lg navbar-light ">
   <div class="container-fluid">
     <button
@@ -11,7 +13,7 @@
     >
       <span class="navbar-toggler-icon" />
     </button>
-    <a class="navbar-brand me-4" href="/"><img src="" height="40" alt="" /></a>
+    <a class="navbar-brand me-4" href="/"><img src="/navbar-logo.png" height="40" alt="" /></a>
     <div class="collapse navbar-collapse" id="navbarToggler">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
@@ -23,7 +25,7 @@
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/courses">Cursos</a>
+          <a class="nav-link" href="/course">Cursos</a>
         </li>
       </ul>
       <div class="d-flex">
@@ -34,6 +36,3 @@
     </div>
   </div>
 </nav>
-
-<style>
-</style>
