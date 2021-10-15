@@ -1,5 +1,5 @@
 import all from "./content/*.md";
-import moment from "moment";
+import moment from "moment/min/moment.min.js";
 
 const posts = all.map(({ filename, html, metadata }) => {
   const permalink = filename.replace(/\.md$/, "");

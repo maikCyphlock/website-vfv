@@ -7,7 +7,7 @@
     const slug = page.page.params.slug;
 
     const post = findPost(slug);
-    console.log(post);
+    
     return { props: { post } };
   }
 </script>
